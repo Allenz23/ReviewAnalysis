@@ -12,6 +12,6 @@ public class Main{
         ReviewAnalysis r = new ReviewAnalysis(reviews);
         System.out.println(r.getAverageRating());
 
-        ArrayList<String> comments = new ArrayList<String>();
+        System.out.println(r.collectComments());
     }
 }

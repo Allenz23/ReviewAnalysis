@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class ReviewAnalysis{
     private Review[] allReviews;
+    ArrayList<String> comments = new ArrayList<String>();
 
     public ReviewAnalysis(Review[] reviews){
         allReviews = reviews;
@@ -9,7 +10,7 @@ public class ReviewAnalysis{
 
     public double getAverageRating(){
         double sum = 0;
-        for (Review r : allReviews) sum += r.getRating;
+        for (Review r : allReviews) sum += r.getRating();
         return sum / allReviews.length;
     }
 
